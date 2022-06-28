@@ -1,0 +1,167 @@
+html{
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+    font-size: 62.5%;
+    font-family:'Noto Serif', serif;
+    background-color: #000;
+    overflow-x: hidden;
+    color: rgb(250, 250, 250);
+}
+
+
+
+/*-- Nav--*/
+
+.header{
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	background-color: #000;
+	font-size: 2.5em;
+	position: absolute;
+	z-index: 10;
+	position: fixed;
+}
+
+
+.navbar-brand{
+	display: flex;
+	width: 50%;
+}
+
+.logo{
+	width: 15%;
+}
+
+
+.header .nav-link{
+	color: rgb(250, 150, 0);
+	font-family: 'noto serif', serif;
+}
+
+
+.header .nav-item{
+	margin-left: 2%;
+	margin-right: 4% 
+}
+
+
+/*--- poner color al boton  ---*/
+
+
+
+
+/*-- banner --*/
+main{
+	background-color: #000;
+}
+
+.banner{
+display: flex;
+padding-top: 10%;
+padding-bottom: 5%;
+justify-content: center;
+align-content: center;
+}
+
+.banner h3{
+	font-family: 'noto serif', serif;
+    font-size: 6em;
+    color: rgb(42, 218, 135);
+	}
+/*-- Footer --*/
+
+footer{
+	background-color: #000;
+	color: rgb(250, 150, 0);
+}
+
+.footer__diseño{
+    font-size: 2em;
+	display: inline;
+	position: relative;
+	width: 100%;
+	}
+
+.footer__diseño div h3{
+	margin-top: 8%;
+	width: 32%;
+	display: inline-block;
+	position: relative;
+	border-style: solid;
+	border-width: 0px 3px 0px 0px;
+	border-color: rgb(42, 218, 135);
+	text-align: center;
+	}
+
+.footer__diseño span{
+	width: 32%;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	vertical-align: top;
+	border-color: rgb(255, 255, 255);
+	margin-bottom: 3%;
+	}
+
+.footer__diseño span p{
+	color: rgb(250, 150, 0)
+	}
+
+.footer__diseño span a{
+	display: block;
+	position: relative;
+	text-align: center;
+	color: rgb(250, 150, 0);
+	text-decoration: none;
+	}
+
+.footer__diseño span a:hover{
+	color: rgb(42, 218, 135);
+	font-size: 1.2em;
+	}
+
+.redes-iconos{
+    background-color: rgb(42, 218, 135);
+    width: 50px;
+    margin-bottom: 4%;
+    height: 50px;
+}
+
+
+.navbar{
+	--bs-navbar-toggler-icon-bg: url("file:///D:/Debora/Escritorio/github-y-bootstrap/imagenes/iconos/descarga.svg");
+}
+
+/*----Suculentas.html----*/
+
+.main{
+	background-color: black;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-content: space-around;
+	padding-top: 12%;
+	
+}
+
+.main__section{
+	display: flex;
+	width: 100%;
+	overflow-x: hidden;
+	padding-bottom: 3%;
+}
+
+.main__section div{
+	display: flex;
+	width: 30%;
+	margin-left: 2.5%;
+	justify-content: space-evenly;
+	
+}
+
+.sucu-img{
+	display: inline;
+	width: 80%;
+	object-fit: fill;
+
+}
