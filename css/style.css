@@ -15,11 +15,15 @@ html{
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
-	background-color: #000;
+	background: linear-gradient(to left, rgb(42, 218, 135), #000);
 	font-size: 2.5em;
 	position: absolute;
 	z-index: 10;
 	position: fixed;
+}
+
+.navbar{
+	--bs-navbar-toggler-icon-bg: url("file:///D:/Debora/Escritorio/github-y-bootstrap/imagenes/iconos/descarga.svg");
 }
 
 
@@ -32,6 +36,10 @@ html{
 	width: 15%;
 }
 
+.logo:hover{
+	transform: rotateY(180deg);
+	width: 20%;
+}
 
 .header .nav-link{
 	color: rgb(250, 150, 0);
@@ -45,14 +53,13 @@ html{
 }
 
 
-/*--- poner color al boton  ---*/
-
-
 
 
 /*-- banner --*/
+
+
 main{
-	background-color: #000;
+	background: linear-gradient( to left, rgb(42, 218, 135), #000);
 }
 
 .banner{
@@ -65,13 +72,34 @@ align-content: center;
 
 .banner h3{
 	font-family: 'noto serif', serif;
-    font-size: 6em;
+    font-size: 8em;
     color: rgb(42, 218, 135);
 	}
+
+
+.banner h3:hover{
+	cursor:cell;
+	transform: skewX(10deg);
+}
+
+
+
+/*----- main-cards -------*/
+section .card img:hover{
+	transform: rotateX(360deg);
+	transition: 3s;
+
+}
+
+
+
+
+
+
 /*-- Footer --*/
 
 footer{
-	background-color: #000;
+	background: linear-gradient(to left, rgb(42, 218, 135), #000);
 	color: rgb(250, 150, 0);
 }
 
@@ -84,12 +112,13 @@ footer{
 
 .footer__diseño div h3{
 	margin-top: 8%;
+	padding-bottom: 2%;
 	width: 32%;
 	display: inline-block;
 	position: relative;
 	border-style: solid;
 	border-width: 0px 3px 0px 0px;
-	border-color: rgb(42, 218, 135);
+	border-color: rgb(250, 150, 0);
 	text-align: center;
 	}
 
@@ -115,22 +144,28 @@ footer{
 	text-decoration: none;
 	}
 
+
+
 .footer__diseño span a:hover{
-	color: rgb(42, 218, 135);
+	color: rgb(0, 0, 0);
 	font-size: 1.2em;
+	transform: translateX(20%);
+	transition: 0.8s;
 	}
 
 .redes-iconos{
-    background-color: rgb(42, 218, 135);
     width: 50px;
     margin-bottom: 4%;
     height: 50px;
 }
 
-
-.navbar{
-	--bs-navbar-toggler-icon-bg: url("file:///D:/Debora/Escritorio/github-y-bootstrap/imagenes/iconos/descarga.svg");
+.redes-iconos:hover{
+	cursor:-webkit-grab;
+	transform: translateX(20%);
 }
+
+
+
 
 /*----Suculentas.html----*/
 
@@ -163,5 +198,36 @@ footer{
 	display: inline;
 	width: 80%;
 	object-fit: fill;
+}
+
+
+.planta-a:hover{
+	transform: skewX(-5deg);
+}
+
+
+.planta-b:hover{
+	transform: rotateY(-180deg);
+}
+
+
+.planta-c:hover{
+	transform: skewX(5deg);
+}
+
+.planta-e:hover{
+	transform: rotateY(-180deg);
+	transition:2s;
+}
+
+
+.planta-f:hover{
+transform: rotateY(180deg);
+transition: 2s;
+}
+
+
+.planta-g:hover{
+	transform: rotateY(-180deg)
 
 }
