@@ -17,7 +17,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="imagenes/iconos/logo.svg" alt="vivero.heinz" class="logo"></a>
+                <a class="navbar-brand" href="index.html"><img src="imagenes/iconos/florlogo.png" alt="vivero.heinz" class="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -43,68 +43,139 @@
 
     <!-- Inicio Main -->
 
-    <main>
-        
-    <section class="banner">
-            <h3>¡Bienvenido!</h3>
-    </section>
+    <main>   
 
-    <section>
-        <div class="card-group">
-            <div class="card">
+    <section class="container-carrusel">
+        <div id="carouselCrossfade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/slide-c.webp" class="d-block w-100 img-carrusel" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/slide-b.webp" class="d-block w-100" alt="Slide 2">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/slide-a.webp" class="d-block w-100" alt="Slide 3">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselCrossfade" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselCrossfade" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+    </section>
+    
+    <section class="container-fluid">
+        <article class="row section-card">
+            <div class="col-sm-12 col-md-6 col-lg-4 card">
                 <img src="imagenes/planta-g.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Cactus A</h5>
                     <p class="card-text">Planta del desierto de Gobi</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="col-sm-12 col-md-6 col-lg-4 card">
             <img src="imagenes/planta-e.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Cactus B</h5>
                     <p class="card-text">Planta del desierto del Sahara</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="col-sm-12 col-md-6 col-lg-4 card">
             <img src="imagenes/planta-a.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Suculenta C</h5>
                     <p class="card-text">Planta del desierto de India.</p>
                 </div>
             </div>
-        </div>
+        </article>
     </section>
 
     </main>
-
     <!-- Inicio footer -->
 
-    <footer>
-		<section class="footer__diseño">
-			<div>
-				<h3> Contacto </h3>
-				<h3> Nuestras Redes </h3>
-				<h3> Our Site </h3>
-			</div>
-			<span>
-				<p> Horario de Atención: 8:00 - 17:00</p>
-				<p> Tel: +54-9-2235-550460</p>
-				<p> Dirección: Los Claveles: 1251</p>
-			</span>
-			<span>
-				<a href="https://www.instagram.com/vivero.heinz/" target="_blank"><img src="imagenes/iconos/ing-icono.svg" class="redes-iconos"></a>
-				<a href="https://api.whatsapp.com/send/?phone=542235550460&text&app_absent=0" target="_blank"><img src="imagenes/iconos/wp-icono.svg" class="redes-iconos"></a>
-			</span>	
-			<span>
-				<a href="index.html">Home</a>
-	 			<a href="pages/nosotros.html">Nosotros</a>
-	 			<a href="pages/contacto.html">Contacto</a>
-	 			<a href="pages/cactus.html" target="_blank">Cactus</a>
-	 			<a href="pages/suculentas.html" target="_blank">Suculentas</a>
-	 		</span>
-	 	</section>
-    </footer>
+    <!-- Footer -->
 
+    <footer class="text-center">
+    <!-- Grid container -->
+        <div class="container">
+        <!-- Section: Links -->
+            <section>
+          <!-- Grid row-->
+                <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- Grid column -->
+                    <div class="col-md-2">
+                    <a href="index.html"  class="links">Home</a>
+                    </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+                    <div class="col-md-2">
+                    <a href="pages/suculentas.html" class="links">Suculentas</a>
+                    </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+                    <div class="col-md-2">
+                    <a href="pages/cactus.html" class="links">Cactus</a>
+                    </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+                    <div class="col-md-2">
+                    <a href="pages/nosotros.html" class="links">Nosotros</a>
+                    </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+                    <div class="col-md-2">
+                    <a href="pages/contacto.html" class="links">Contacto</a>
+                    </div>
+            <!-- Grid column -->
+                </div>
+          <!-- Grid row-->
+            </section>
+        <!-- Section: Links -->
+  
+            <hr class="my-5" />
+  
+        <!-- Section: Text -->
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                    <p>
+                    ¡Plantas del desierto tradías a Mar del Plata y de acá al Mundo!
+                    </p>
+                    </div>
+                </div>
+            </section>
+        <!-- Section: Text -->
+  
+        <!-- Section: Social -->
+        <section class="text-center mb-5">
+            <a href="https://www.instagram.com/vivero.heinz/" class="text-white me-4">
+            <img src="imagenes/iconos/ing-icono.svg" width="40px" height="40px">
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=542235550460&text&app_absent=0" target="_blank" class="text-white me-4">
+            <img src="imagenes/iconos/wp-icono.svg" class="redes" height="40px" width="40px"></img>
+            </a>
+        </section>
+        <!-- Section: Social -->
+        </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 
+            <a class="text-footer" href="www.linkedin.com/in/debora-chiatti">Débora Chiatti Heinz</a>
+        </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
