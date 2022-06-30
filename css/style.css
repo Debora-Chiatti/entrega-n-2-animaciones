@@ -29,7 +29,7 @@ body{
 }
 
 .navbar{
-	--bs-navbar-toggler-icon-bg: url("file:///D:/Debora/Escritorio/github-y-bootstrap/imagenes/iconos/hamburger.svg");
+	--bs-navbar-toggler-icon-bg: url("imagenes/iconos/hamburger.svg");
 	width: 100%;
 }
 
@@ -163,7 +163,7 @@ footer .links{
 
 
 .navotras{
-	background-image: url("file:///D:/Debora/Escritorio/github-y-bootstrap/imagenes/slide-back.webp");
+	background-image: url("../imagenes/slide-back.webp");
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
