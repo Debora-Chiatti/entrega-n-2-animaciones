@@ -44,6 +44,7 @@ body{
 	width: 15%;
 }
 
+
 .navbar-nav{
 	display: flex;
 	width: 100%;
@@ -57,8 +58,10 @@ body{
 
 .header .nav-link:hover{
 	font-size: 1,2em;
-	color: rgb(255, 255, 255)
-	;
+	color: rgb(255, 255, 255);
+	transform: translateY(-10px);
+	transition: 0.8s;
+
 }
 
 .header .nav-item{
@@ -94,9 +97,22 @@ padding-right: 2%;
 }
 
 .card-img-top{
+	display: inline;
 	width: 80%;
 	margin-left: 10%;
 	border-radius: 5%;
+}
+
+.card-right{
+	transform: skewX(5deg);
+}
+
+.card-left{
+	transform: skewX(-5deg);
+}
+
+.card-img-top:hover{
+	transform: translateX(-10px);
 }
 
 .card-title{
@@ -105,6 +121,11 @@ padding-right: 2%;
 	color: rgb(238, 123, 34);
 }
 
+.card-title:hover{
+	transform: translateX(-15px);
+	color: rgb(191, 51, 65);
+	transition: 1s;
+}
 
 .card-text{
 	font-family: 'noto serif', serif;
@@ -114,6 +135,8 @@ padding-right: 2%;
 
 .card-text:hover{
 	color: #fff;
+	transform: translateY(10px);
+	transition: 1s;
 }
 
 
@@ -129,6 +152,7 @@ footer{
 }
 
 footer .links{
+	display: inline;
 		font-family: 'noto serif', serif;
 		font-size: 2.5em;
 		text-decoration: none;
@@ -147,10 +171,20 @@ footer .links{
 
 .text-footer:hover{
 	color: #fff;
+
 }
 
+.iconos-animation:hover{
+	transform: translateX(-20px);
+	background-color: rgb(238, 123, 34);
+	transition: 1s;
+}
 
-
+.iconos-animation-b:hover{
+	transform: translateX(20px);
+	background-color: rgb(238, 123, 34);
+	transition: 1s;
+}
 
 
 
@@ -186,16 +220,20 @@ footer .links{
 }
 
 
+.logo-animation:hover{
+	transform: translateX(5%);
+}
 
-
-
+.letter-animation:hover{
+	cursor: zoom-in;
+}
 
 /*------ Main ------*/
 
 .main{
 	width: 100%;
 	padding-top: 12%;
-	background: linear-gradient(to right, rgba(60, 169, 135, 0.9), rgba(65, 159, 125, 0.8));
+	background: linear-gradient(to bottom, rgba(34, 199, 228, 0.9), rgba(154, 241, 205, 0.8));
 }
 
 .main__section{
@@ -215,9 +253,69 @@ footer .links{
 
 
 
+.planta-a:hover{
+		transform: skewX(-5deg);
+		cursor: zoom-in;
+	}
+	
+	
+.planta-b:hover{
+		transform: rotateY(-180deg);
+		cursor: zoom-in;
+	}
+	
+	
+.planta-c:hover{
+		transform: skewX(5deg);
+		cursor: zoom-in;
+	}
+	
+.planta-e:hover{
+		transform: rotateY(-180deg);
+		transition:2s;
+		cursor: zoom-in;
+	}
+	
+.planta-g:hover{
+		transform: rotateY(-90deg);
+		cursor: zoom-in;
+	
+	}
 
 
 
+.planta-a:active{
+	transform: scaleX(1.2);
+	}
+
+.planta-b:active{
+		transform: scaleX(1.2);
+	}
+
+
+.planta-c:active{
+		transform: scaleX(1.2);
+	}
+
+.planta-f:active{
+		transform: scaleX(1.2);
+	}
+
+.name-animation:hover{
+		transform: scaleY(1.5);
+		color: rgba(150, 16, 231, 0.8)
+		
+	}
+
+.name-animation-left:hover{
+		transform: skewY(10deg);
+		color: rgba(231, 16, 98, 0.8)
+	}
+
+.name-animation-right:hover{
+		transform: skewY(-10deg);
+		color: rgb(238, 123, 34);
+	}
 
 /*------Footer-----*/
 .links-sucu{
@@ -230,6 +328,7 @@ footer .links{
 
 .links-sucu:hover{
 	color:rgb(98, 14, 231);
+	transition: 1s;
 }
 
 .slogan-footer{
@@ -237,10 +336,14 @@ footer .links{
 	font-size: 1em;
 }
 
+.slogan-footer:hover{
+	font-size: 1.5em;
+	transform: skewX(15deg);
+}
+
 .text-footer-sucu{
 	font-family:  'noto serif', serif;
 	text-decoration: none;
 	color: rgb(98, 14, 231);
-
 }
 
